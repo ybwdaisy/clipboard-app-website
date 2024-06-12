@@ -148,7 +148,7 @@ export default function Example() {
       <footer className="mt-5 mb-10 mx-auto w-full max-w-container justify-center px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm leading-6 text-slate-500">
           <a href="https://beian.miit.gov.cn" target="_blank" className="underline">
-            京ICP备********号
+            京ICP备2024071281号
           </a>
         </p>
       </footer>
