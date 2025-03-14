@@ -35,7 +35,7 @@ const features = [
   },
 ]
 
-export default function Example() {
+export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -66,13 +66,20 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
             <a
               href="https://apps.apple.com/app/id6448028046"
               target="_blank"
               className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Download
+            </a>
+            <a
+              href="https://buy.stripe.com/6oEcQNa3y1a2gX68ww"
+              target="_blank"
+              className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Buy License
             </a>
           </div>
         </nav>
@@ -103,6 +110,9 @@ export default function Example() {
                   {[...navigation, {
                     name: 'Download',
                     href: 'https://apps.apple.com/app/id6448028046',
+                  }, {
+                    name: 'Buy License',
+                    href: 'https://buy.stripe.com/6oEcQNa3y1a2gX68ww',
                   }].map((item) => (
                     <a
                       key={item.name}
